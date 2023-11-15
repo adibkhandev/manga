@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/manga/static/css/main.2c066279.css",
-    "main.js": "/manga/static/js/main.ada61cc1.js",
-    "static/js/483.f348935e.chunk.js": "/manga/static/js/483.f348935e.chunk.js",
+    "main.js": "/manga/static/js/main.4c37c15e.js",
+    "static/js/483.f5046fcb.chunk.js": "/manga/static/js/483.f5046fcb.chunk.js",
     "static/js/787.042cb57d.chunk.js": "/manga/static/js/787.042cb57d.chunk.js",
     "static/media/bg-jjk-3.jpg": "/manga/static/media/bg-jjk-3.1826dd4235e18db7189e.jpg",
     "static/media/deku.jpg": "/manga/static/media/deku.577627410471c5476464.jpg",
     "static/media/Komigo.ttf": "/manga/static/media/Komigo.6f3c63d06f8f676f98fe.ttf",
     "index.html": "/manga/index.html",
     "main.2c066279.css.map": "/manga/static/css/main.2c066279.css.map",
-    "main.ada61cc1.js.map": "/manga/static/js/main.ada61cc1.js.map",
-    "483.f348935e.chunk.js.map": "/manga/static/js/483.f348935e.chunk.js.map",
+    "main.4c37c15e.js.map": "/manga/static/js/main.4c37c15e.js.map",
+    "483.f5046fcb.chunk.js.map": "/manga/static/js/483.f5046fcb.chunk.js.map",
     "787.042cb57d.chunk.js.map": "/manga/static/js/787.042cb57d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c066279.css",
-    "static/js/main.ada61cc1.js"
+    "static/js/main.4c37c15e.js"
   ]
 }
