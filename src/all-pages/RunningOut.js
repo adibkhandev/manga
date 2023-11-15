@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 
 
 const RunningOut = () => {
-  let url = process.env.REACT_APP_BACKEND_URL + 'news/'
+  let url = process.env.REACT_APP_BACKEND_URL + '/news/'
   let image_url = process.env.REACT_APP_BACKEND_URL
   let [active,setActive]=useState(0)
   let [animate,setAnimate]=useState(0)
