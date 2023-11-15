@@ -1,0 +1,33 @@
+.loadpage{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items : center;
+	justify-content: center;
+
+
+}
+.circle{
+	position:absolute ;
+	z-index: -1;
+	width: 0.1em;
+	height: 0.1em;
+	background-image:url('../../public/images/deku.jpg') ;
+	 background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+   animation-name: loader,spiner;
+   
+   animation-duration: 2s,1.4s;
+   animation-timing-function: ease-out;
+   animation-fill-mode: forwards;
+   animation-delay: 2s;
+}
+.runner{
+	font-size: clamp(0.4em,0.8vw,1em);
+	z-index: 1;
+	filter : saturate(0);
+	width: 20em !important;
+	margin-bottom: 6em;
+}

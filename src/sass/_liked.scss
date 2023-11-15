@@ -1,0 +1,231 @@
+.liked-page{
+    .nav-contain{
+        z-index: 1;
+    }
+    .items{
+   
+     z-index: 1;
+
+    }
+ width: 100vw;
+ height: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ .items{
+ 	margin-top: max(15vh,90px);
+ 	 height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+
+
+ align-items: center;
+ }
+ .item{
+ 	width: 70em;
+    height: 10em;
+    min-height: 90px;
+    font-size: 1vw;
+    background-color: black;
+ 	justify-content: space-between;
+ 	margin: 0;
+.taka{
+    h1{
+        // font-size: clamp(0.8rem,1vw,1.4rem) !important;
+    }
+    img{
+        font-size: clamp(0.8rem,1vw,1.4rem) !important;
+        width: 1em;
+        height: 1em;
+    }
+}
+ 	.like{
+         padding-right: 5em;
+         padding-left: 5em;
+ 		img{
+ 			width:2em;
+ 		}
+ 	}
+ }
+}
+.liked-page{
+    .items{
+    margin-bottom: 4rem;
+}
+}
+.item-cont{
+    overflow: hidden;
+    height: auto;
+    width: auto;
+   
+    position: relative;
+    &:hover .hoverer{
+        top:0;
+        transition-delay: 1s;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+
+    }
+    .item{
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+ 
+  background-color: #ececec;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;  
+  margin: 8px 0 ;
+  .image {
+    max-width: 3.15em;
+    font-size: clamp(0.8rem,1vw,1.4rem) !important;
+    max-height: 5em;
+    // min-height: 80px;
+    margin-left: max(2%,1em);
+    img {
+     width:100%;
+     border-radius: 2px;
+    }
+  }
+  .title{
+    width: 30%;
+    // width: 34% ;
+    h1{
+      color:#a0a5ab;
+      @include Font(1.6em,300);
+    }
+  }
+  .trio{
+    margin-left: 3%;
+    display: flex;
+    width: 46%;
+    justify-content: space-around;
+    align-items: center;
+    .counter{
+      display: flex;
+      align-items: center;
+      img{
+        height: 1.6em;
+      }
+      h1{
+        @include Font(1.1em,100);
+        color: black;
+        background-color: #b1b2b5;
+        padding: 0.2em 0.55em;
+        border-radius: 40px;
+      }
+      .left{
+        transform: rotate(180deg);
+      }
+      
+      
+    }
+  }
+ 
+ }
+
+   
+}
+.hoverer{
+    height: 100%;
+    width: 100%;
+    min-width:30rem ;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cont{
+
+        &:hover .purple-line{
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            transform: rotate(2deg);
+        }
+        &:hover .plus{
+            width: 0.8em;
+            margin-left: 0.2em;
+              transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+        }
+         &:hover .imgs{
+            width: 3.7em;
+              transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+        }
+
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        @include FancyFont(clamp(0.3rem,1.1vw,1.2rem),100);
+        word-wrap: no-wrap;
+        color: white;
+        .imgs{
+            font-size: inherit;
+             position: relative;
+            width: 3.6em;
+            margin-left: 1.05em;
+        }
+        .cart-icon{
+            font-size: clamp(0.3rem,1.1vw,1.2rem);
+            width: 2em;
+        }
+        .plus{
+            font-size: inherit;
+            position: absolute;
+            width: 0.65em;
+            top: 0;
+            right: 0;
+        }
+
+    }
+    .purple-line{
+        width: 100%;
+        margin-top: 1em;
+        height: 2.5px;
+        background-color: #c200ff;
+
+    }
+}
+@media (width <690px) {
+    .items{
+        z-index: 0 !important;
+    }
+    .liked-page{
+        .items{
+            .item{
+                justify-content: space-between;
+                width: 42em;
+                font-size: clamp(0.55rem,1vw,1.1rem) !important;
+            }
+            .hoverer{
+                  font-size: clamp(0.55rem,1vw,1.1rem) !important;
+                width: 42em !important;
+            }
+
+        }
+    }
+}
+@media (width <405px) {
+
+    .liked-page{
+        .items{
+            margin-top: 7em !important;
+            .item{
+        
+                width: 46em;
+              
+                 font-size: clamp(0.4rem,0.8vw,0.8rem) !important;
+            }
+            .hoverer{
+                   font-size: clamp(0.4rem,0.8vw,0.8rem) !important;
+                width: 46em !important;
+            }
+
+        }
+    }
+}

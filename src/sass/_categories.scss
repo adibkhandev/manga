@@ -1,0 +1,318 @@
+.whole-page-cat{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	.content-cont{
+		margin-top: 4%;
+	
+		width: 80vw;
+		height: min(80%,60vw);
+		display: flex;
+        flex-direction: column;
+
+        .top{
+        	width: 100%;
+        	height: 70%;
+        	display: flex;
+        	.aside{
+        	width: 80%;
+        	height: 100%;
+            }
+            .right-side{
+            	width: 19%;
+            	margin-left: 1%;
+            	height: 97.5%;
+            
+            }
+        	.first-row{
+        		display: flex;
+        		width: 100%;
+        		height: 50%;
+        		margin-bottom: 1%;
+        	
+        	}
+        	.second-row{
+        		height: 45%;
+        		width: 100%;
+        	
+        		margin-bottom: 1%;
+        	}
+        }
+        .bottom{
+        	display: flex;
+        	width: 100%;
+        	height: 30%;
+        }
+        .boxes{
+        	position: relative;
+        	overflow: hidden;
+        	border-radius: 5px;
+        	// display: flex;
+        	// align-items: center;
+        	// justify-content: center;
+        	&:hover{
+        		transform: scale(1.01);
+        		box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px;
+        		transition: 0.5s ease-in-out;
+        	}
+        	img{
+        		width: 120%;
+        		height: auto;
+        		min-height: 100%;
+        	}
+        	h1{
+        		position: absolute;
+        		@include FancierFont(4vw,100);
+        		color: white;
+        	}
+        }
+        .second-row{
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        }
+		
+		#box-1{
+			width: 49.5%;
+			height: 100%;
+			margin-right: 0.5%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			h1{
+				font-size: 5vw;
+				top:min(7vh,30%);
+				left: 10%;
+			}
+			@keyframes anime-figures {
+				0%{
+					opacity: 0;
+				}
+				100%{
+					opacity: 1;
+					margin-left: 0;
+					
+				}
+			}
+			img{
+				animation-name: anime-figures;
+				animation-duration: 1.3s;
+				animation-delay: 2.2s;
+				animation-fill-mode: forwards;
+				margin-left: 170%;
+			}
+
+			
+		
+		}
+		#box-2{
+			width: 49.5%;
+			height: 100%;
+			margin-left: 0.5%;
+			 @keyframes category-appear-2{
+	                0%{
+		              margin-top: 40%;
+		              opacity: 0;
+	                }
+	                100%{
+	                	margin-top: 0;
+	                	opacity: 1;
+		
+	                }
+                }
+                 @keyframes text-appear{
+	                0%{
+		              
+		              opacity: 0;
+	                }
+	                100%{
+	                	
+	                	opacity: 1;
+		
+	                }
+                }
+			img{
+				animation-name: category-appear-2;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1s;
+                 animation-fill-mode: forwards;
+                margin-top: 60%;	
+                opacity: 0;
+			}
+			h1{
+				animation-name: text-appear;
+				animation-fill-mode: forwards;
+                animation-duration: 1.8s;
+                animation-delay: 2.1s;
+
+				opacity: 0;
+				top:min(8vh,20%);
+				left: 26%;
+				color: red;
+				@include FancierFont(6vw,100);
+			}
+			
+
+		}
+		#box-3{
+		
+                @keyframes category-appear-1{
+	                0%{
+		              margin-left: -100%;
+	                }
+	                100%{
+	                	margin-left: 0;
+		
+	                }
+                }
+                 @keyframes text-appear{
+	                0%{
+		              
+		              opacity: 0;
+	                }
+	                100%{
+	                	
+	                	opacity: 1;
+		
+	                }
+                }
+
+			width: 100%;
+			height: 100%;
+			h1{
+				top:1%;
+				left:4%;
+				@include FancierFont(8vw,100);
+				animation-name: text-appear;
+				animation-timing-function: ease-in-out;
+				animation-duration: 0.5s;
+				animation-delay: 1s;
+				animation-fill-mode: forwards;
+				opacity: 0;
+			}
+			img{
+				animation-name: category-appear-1;
+                animation-duration: 1.1s;
+                animation-timing-function: ease-in-out;	
+			}
+			
+
+		}
+		#box-4{
+			width: 100%;
+			height: 100%;
+			h1{
+				top:62%;
+				left:10%;
+				@include FancierFont(5.3vw,100);
+			}
+			@keyframes lamps {
+				0%{
+					opacity: 0;
+				}
+				100%{
+					opacity: 1;
+					margin-top: 0;
+					
+				}
+			}
+			img{
+				animation-name: lamps;
+				animation-duration: 1.3s;
+				animation-delay: 3s;
+				animation-fill-mode: forwards;
+				margin-top: 500%;
+			}
+			
+		}
+		#box-5{
+			width: 49.5%;
+			height: 100%;
+			margin-right: 0.5%;
+			overflow: hidden;
+			@keyframes category-appear-9{
+	                0%{
+		              
+		              opacity: 0;
+	                }
+	                100%{
+	                	margin-left: 0;
+	                	opacity: 1;
+		
+	                }
+                }
+			img{
+				animation-name: category-appear-9;
+                animation-duration: 1.3s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 2.35s;
+                 animation-fill-mode: forwards;
+                margin-left: 100%;	
+                opacity: 0;
+			}
+			h1{
+				top:2%;
+				left:7%;
+				color: white;
+				@include FancierFont(7vw,100);
+			}
+
+			
+		}
+		#box-6{
+			width: 49.5%;
+			height: 100%;
+			margin-left: 0.5%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@keyframes anime-figures {
+				0%{
+					opacity: 0;
+
+				}
+				100%{
+					opacity: 1;
+					margin-left: 0;
+					
+				}
+			}
+			img{
+				animation-name: anime-figures;
+				animation-duration: 1.3s;
+				animation-delay: 2.4s;
+				animation-fill-mode: forwards;
+				margin-left: -280%;
+			}
+			h1{
+				// top:6%;
+				// left:4.2%;
+                
+				z-index: 2;
+				@include FancierFont(5.35vw,100);
+			}
+		}
+
+	}
+}
+@media screen and (max-width: 1400px) {
+    #box-6{
+    	img{
+    		height: 100%;
+    	}
+    }
+    	#box-4{
+			width: 100%;
+			height: 100%;
+			img{
+				height: 100%;
+				width: auto;
+			}
+			
+		}
+}

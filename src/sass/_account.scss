@@ -1,0 +1,558 @@
+// .account-page{
+// 	// max-width: 100vw !important;
+// 	// overflow: hidden;
+	
+// 	width: 100vw;
+// 	display: flex;
+// 	justify-content: space-around;
+// 	margin-right: 0 !important;
+// 	.left{
+// 		width: 50vw;
+// 		height: 100vh;
+// 		overflow: hidden;
+// 		display: flex;
+// 		flex-direction: column;
+// 		// margin-left: 3.5vw;
+		
+
+// 		.pfp-cont{
+// 			height: auto;
+// 			max-height: 60vh;
+// 			// min-height: ;
+// 	        display: flex;
+// 	        justify-content: flex-start;
+// 	        align-items: center;
+// 			// margin-top: 3em;
+// 			margin-left: 0.1em;
+// 			font-size: clamp(1.2rem,2vw,1.9rem);
+			
+// 			img{
+// 			height: 60%;
+// 			border-radius: 500px;
+               
+              
+// 			}
+// 			input{
+// 				display: none;
+// 			}
+// 		}
+// 		.username{
+//         	height: auto ;
+//         	min-height: 7em;
+//         	width: auto;
+//         	margin-left: 1.2em;
+//         	// margin-top: 5vh;
+//         	margin-bottom: 0.5em;
+//         	color: #555555;
+//         	input{
+//         		font-size: clamp(3.6rem,6vw,6rem)!important;
+//         	height: 100%;
+//         	@include FancyFont(clamp(3.6rem,6vw,6rem),100) ;
+
+//             width: 100%;
+//         	&::placeholder{
+//         	// font-style: "Manrope",sans-serif !important;
+//             }
+//         }
+//         }
+//         .number{
+//         	margin-top: 2vh;
+//         }
+//         .number-input-container , .mail-input-container{
+//         	input{
+//         	font-family: "Manrope", sans-serif !important ;
+//             color: #555555;
+// 			padding: 0;
+// 			margin: 0;
+// 			border-radius: 4px;
+// 			margin-bottom: 1.2em;
+// 			min-width: 52rem;
+// 			width: 40vw;
+//              padding-left: 1em;
+// 			height: 2.8em;
+// 			min-height: 3.2rem;
+// 			background-color: #f1f1f1;
+// 			@include Font(clamp(1.6rem,1.6vw,2.6rem),100) ;
+// 			box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+//         	}
+//         }
+
+// 	}
+// 	.right{
+// 		// overflow: hidden;
+// 		margin-top: 3.5vh;
+// 		width: auto;
+// 		margin-left: -2.1vw;
+// 		height: 96.5vh;
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: space-between;
+		
+			
+// 		h1{
+// 			@include FancyFont(2.2rem,100);
+// 			color: #555555;
+// 			margin-bottom: 0.3em;
+// 			margin-top: 0.3em;
+// 		}
+// 		.btns{
+// 			display: flex;
+// 			margin-top: 3vh;
+// 			margin-bottom: 2rem;
+// 			button{
+// 				border-radius: 3px;
+// 			padding: 1em 9em;
+// 			margin-right: 2em;
+// 			@include Font(clamp(0.4em,0.8vw,1em),100);
+
+// 			}
+// 			.btn-1{
+// 				background-color: #27002a;
+// 				color: white;
+// 			}
+// 			.btn-2{
+// 				background-color: transparent;
+// 				border-style: solid;
+// 				border-color: red;
+// 				color: red;
+// 			}
+// 		}
+// 		.adress{
+// 		padding: 0;
+// 		textarea{
+// 		font-family: "Manrope",sans-serif !important;
+// 		font-size: clamp(1rem,1.6vw,2.2rem) !important;
+// 			padding: 0;
+// 			margin: 0;
+			
+// 			width: 38vw;
+//             box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+//             padding-top: 0.4em;
+// 			height: 8em;
+// 			padding-left: 0.6em;
+// 			background-color: #f1f1f1;
+// 			word-break: break-word !important;
+// 			&::placeholder{
+//             @include Font(1em,100) ;
+//             max-width: 100%;
+//             font-size: 1em !important;
+        	
+        	 
+//             }
+// 		  }
+// 		}
+			
+		
+// 	}
+	
+// }
+// @media (width<870px){
+// 			.go-to{
+//                     font-size: clamp(0.13rem,0.36vw,0.24rem) !important;
+// 			}
+// 			.images{
+// 				img{
+// 					font-size: clamp(0.13rem,0.36vw,0.24rem) !important;
+// 				}
+// 			}
+// 		.wishlist,.orders{
+// 			min-width: 42vw;
+// 			font-size: clamp(0.1rem,0.17vw,0.32rem) !important;
+// 		}
+// 	.account-page{
+// 		flex-direction: column;
+// 		width: 100vw;
+// 		height: auto;
+// 		overflow-x: hidden;
+// 		.lists{
+// 			display: flex;
+// 			justify-content: space-between;
+// 		}
+// 		.left , .right{
+// 		width: 100vw !important;
+
+// 		}
+// 		.left: {
+//           align-items:  center;
+// 		}
+// 		.right{
+// 			margin-left: 4vw;
+// 			margin-top: 0 !important;
+
+// 		}
+// 		.pfp-cont{
+//             width: 100vw;
+// 			font-size: max(1.2em,3vw);
+		     
+
+		    
+// 		     display: flex;
+// 		     justify-content: center;
+// 		     align-items: center;
+// 			// margin-top: 1rem !important;
+// 			img{
+// 				width: 60%;
+// 			}
+// 		}
+// 		.username{
+            
+// 			margin-left: 1vw !important;
+// 			input{
+// 			font-size: 0.7em !important;
+// 		}
+
+// 		}
+// 		.number{
+// 			margin-top: max(0.4vh,0.6rem) !important;
+// 			margin-bottom: 0.4rem;
+// 		}
+// 		.number-input-container , .mail-input-container{
+// 			margin-left: 0 !important;
+// 			input{
+// 				margin-bottom: 0.8em !important;
+// 			height: 2.6em !important;
+// 			min-width: 88vw !important;
+// 		}
+// 		}
+// 		.adress{
+// 			input{
+// 			width: 88.5vw !important;
+// 		}
+// 		}
+// 		.btns{
+// 			padding: 0 !important;
+// 			width: 100vw;
+// 			margin-bottom: max(2rem,4vh) !important;
+// 			button{
+// 				padding: 0 !important;
+// 				width: 45vw;
+// 				height: max(2em,5vh);
+// 			}
+// 		}
+// 	}
+// }
+// @media (width<590px) {
+// 	.wishlist , .orders{
+// 		min-width: 40px;
+// 	}
+// 	.lists{
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+// 	.go-to{
+// 		width: 100vw;
+//                     font-size:clamp(0.16rem,0.7vw,1rem) !important;
+// 			}
+// 			.images{
+// 				img{
+// 					font-size:clamp(0.16rem,1vw,1rem) !important;
+// 				}
+// 			}
+	
+// }
+body {
+  position: absolute;
+ }
+ html, body {
+width:100%;
+}
+body {
+    min-width: fit-content;
+}
+.account-page{
+	min-height: -webkit-fill-available;
+	height: 100vh;
+	width:100vw ;
+	display: flex;
+
+	@media (width<1160px) {
+		height: 200vh;
+		contain:paint;
+		flex-direction: column;
+		
+	}
+
+	.left , .right{
+		overflow: hidden;
+		width: 50vw;
+		height: 100vh;
+		@media (width<1160px) {
+           width: 94vw;
+           height: 100vh;
+           overflow: initial;
+		}
+		@media (width<570px) {
+		  width: 100vw;
+		
+	  }
+	}
+	.left{
+		padding-left:4vw ;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (width<570px) {
+           margin-left: 0;
+		}
+		.pfp-cont{
+			height: fit-content;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			
+			overflow: hidden;
+			@media (width<1160px) {
+                margin-right: 4vw;
+                justify-content: center;
+                img{
+                	height:90%;
+                }
+			}
+			@media (width<570px) {
+                img{
+                   height: 50% !important;
+                }
+			}
+			img{
+				border-radius: 3000px;
+				height:70%;
+			}
+			input{
+				display: none;
+			}
+
+		}
+		.texts{
+			// height: 40%;
+			padding-bottom: 1.4rem;
+			@media (width<570px) {
+                  padding-left: 4vw;
+
+			}
+
+		.username{
+			@include FancyFont(clamp(3.6rem,4vw,4.4rem),100);
+			margin-bottom: 0.4em;
+			input{
+             font-size: inherit;
+             font-family: inherit;
+             font-weight: inherit;
+			}
+		}
+        .number-input-container , .mail-input-container{
+        	position: relative;
+			@include Font(clamp(1.6rem,1.6vw,2.6rem),100) ;
+
+        	input{
+        	@include Font(clamp(1.6rem,1.6vw,2.6rem),100) ;
+        	font-family: "Manrope", sans-serif !important ;
+            color: #555555;
+			padding: 0;
+			margin: 0;
+			border-radius: 4px;
+			margin-bottom: 1.2em;
+			// min-width: 52rem;
+			font-size: inherit;
+			width: 90%;
+             padding-left: 1em;
+			height: 2.8em;
+			min-height: 3.2rem;
+			background-color: #f1f1f1;
+			box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        	@media (width<570px) {
+            font-size: clamp(1.2rem,1.4vw,2rem) ;
+            width: 78vw;
+
+        	}
+        	 @media (width<350px) {
+              font-size: clamp(0.8rem,1vw,1rem);
+        	 }
+            }
+          .write-cont{
+          	font-size: inherit;
+             position: absolute;
+             top: -0.6em;
+             right: 4rem;
+             width: 100%;
+             height: 100%;
+             display: flex;
+             justify-content: flex-end;
+             align-items: center;
+             opacity: 0.6;
+             img{
+             	height: 2rem;
+             }
+             @media (width<1160px) {
+                right: 8vw;
+             }
+              @media (width<570px) {
+                right: 17vw;
+                top: -0.5em;
+                img{
+                	height: 1.2rem;
+                }
+              }
+             @media (width<350px) {
+              top:-0.3em;
+              right: 18vw;
+              img{
+              	height:1rem;
+              }
+        	 }
+          }
+        }
+	  }
+
+	}
+	.right{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (width<1160px) {
+           padding-left: 4vw;
+		}
+		@media (width<570px) {
+           // padding-left: 8vw;
+		}
+		h1{
+			@include FancyFont(clamp(2rem,2.8vw,2.8rem),100);
+			color: #555555;
+			margin-bottom: 0.1em;			
+		}
+		.btns{
+			width: 92%;
+			margin-top: 0.6em;
+			padding-bottom: 3.8rem;
+			display: flex;
+			justify-content: space-between;
+			button{
+				width:48%;
+				@include Font(clamp(0.8rem,1.1vw,1.1rem),100);
+				height: 3.78em;
+				border-radius: 3.5px;
+			}
+			@media (width<570px) {
+              width:92vw;
+		    }
+		}
+		.adress{
+            position: relative;
+			margin-top: 2rem;
+			width: 92%;
+
+			@media (width<570px) {
+              width: 82vw;
+                 
+			}
+		.mapper-cont{
+            position: absolute;
+            top: clamp(1.4rem,2.8vw,2.2rem);
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+              img{
+                  height: 2rem;
+                  opacity: 0.6;
+              }
+		}
+		textarea{
+			padding-left: 0.6em;
+			padding-top: 0.2em;
+			width:100% ;
+			height: 8em;
+			@include Font(clamp(1.6rem,1.6vw,2.6rem),100);
+			background-color: #f1f1f1;
+			box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+		}
+		}
+		.lists{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 50%;
+			@media (width<570px) {
+              justify-content: flex-start;
+               margin-top: 4vh;
+		   }
+		    @media (900px<width<1160px) {
+		    	width: 92vw;
+		    	padding-right: 4vw;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-top: 4vh;
+                margin-bottom: -4vh;
+		    }
+		}
+
+		.wishlist,.orders{
+				
+				height: 48% !important;
+				width: auto !important;
+				.ash{
+					
+				}
+                .images{
+                	display: flex;
+
+                	align-items: center;
+                	height: 80%;
+                	img{
+                	   margin-right: 0.6rem;
+                       height: 90%;   	
+                    }
+                 }
+				.go-to{
+					font-size: clamp(0.2rem,0.27vw,0.32rem) ;
+					border-radius: 20em;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #f1f1f1;
+					box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+					width: 27em !important;
+					// max-width: 10em;
+					height: 27em !important;
+					// max-height: 10em;
+					margin-left: clamp(2rem,3.2vw,4em);
+					img{
+						opacity: 0.8;
+						margin: 0 ;
+						height: 40%;
+					}
+					 @media (width<350px) {
+                       margin-left: clamp(1rem,2.2vw,2em);
+                       font-size: clamp(0.1rem,0.18vw,0.4rem) ;
+        	       }
+				}
+				.images{
+					display: flex;
+				}
+				// overflow: hidden;
+				@media (width<570px) {
+                   .images{
+                   	height: auto;
+                   	width: 92vw;
+                     img {
+                      height: auto;
+                      width: 20%;
+                      max-width: 4rem;
+                    }
+
+                  } 
+		       }
+			}
+			.wishlist{
+				margin-right: min(10vw,8rem);
+				@media (width<570px) {
+                  margin-bottom: 2vh;
+                }					
+			}
+			@media (width<570px) {
+               .orders{
+               	  margin-bottom: max(2vh,1.2rem);
+               }
+			}
+	}
+}
+

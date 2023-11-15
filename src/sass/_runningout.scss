@@ -1,0 +1,195 @@
+
+.page2{
+	height: 66vh;
+	min-height: 654px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+
+
+	
+	.txts{
+		width: 30%;
+		height: 56%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: 8vw;
+		// background-color: black;
+		.small{
+			@include FancyFont(clamp(0.95rem,1.8vw,1.8rem),100);
+		}
+
+		.big{
+			@include FancyFont(clamp(1.5rem,2.9vw,2.9rem),100);
+		}
+		.pricers{
+			.title{
+				@include Font(clamp(1.2rem,2.3vw,1.9rem),100);
+				margin-bottom: 0.2em;
+			}
+			button{
+				font-size: clamp(0.45rem,0.8vw,0.7rem);
+				background-color: #19001E;
+				color: white;
+				width: 20em;
+				height: 4em;
+				margin-top: 1.6em;
+				border-radius: 3px;
+			}
+		}
+	}
+	.images{
+        
+		padding: 0 0.3vw;
+		overflow: hidden;
+		width: auto;
+		height: 50%;
+		// background-color: purple;
+		display: flex;
+		
+		align-items: center;
+		.img-cont{
+			width: 16vw;
+			max-width: 200px;
+	
+			height: 100%;
+			margin: 0 0.3vw;
+			overflow: hidden !important;
+			border-radius: 2px;
+			img{
+				height: 100%;
+			}
+
+		}
+		.inactive-images{
+			filter: blur(2px);
+		}
+		.active-image{
+			@keyframes go {
+				0%{
+					opacity: 1;
+				}
+				100%{
+					opacity: 0;
+				}
+			}
+			animation-name: go;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			
+		}
+	}
+	.movers{
+		
+		position: absolute;
+		width: 96%;
+		display: flex;
+		justify-content: space-between;
+		#left{
+			transform: rotate(180deg);
+		}
+		button{
+			opacity: 0.8;
+			width: 15em;
+			height: 15em;
+			border-radius: 100%;
+			img{
+				width:25%;
+			}
+		}
+	}
+
+}
+
+.ghost{
+	animation-name: animation-1;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+.human{
+	animation-name: animation-2;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+
+}
+.ghost-text{
+	animation-name: animation-3;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+.human-text{
+	animation-name: animation-4;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+
+}
+@media (width>1400px) {
+	.page2{
+	.img-cont{
+      max-width: 240px;
+	}
+
+	}
+	
+}
+@media (width<1420px) {
+	.page2{
+		&:hover{
+	    .movers{
+	    	width: 96% !important;
+	    	transition: width ease-in-out 0.3s;
+	    }
+	}
+		.movers{
+			width: 200vw !important;
+			transition: width ease-in-out 0.3s;
+		  }
+	    
+		.images{
+		
+			.img-cont{
+				min-width: 72px;
+				height: 24vw;
+				min-height: 110px;
+			}
+		}
+	}
+}
+@media (width<540px) {
+	.page2{
+		
+	.images{
+		margin-left: -72vw;
+	}
+	.txts{
+		margin-top: 10vw;
+	}
+	}
+	
+}
+@media (width<440px) {
+	.img-cont{
+         min-width: 55px !important;
+         min-height: 70px !important;
+	}
+	.land{
+		.page2{
+			.movers{
+				button{
+				width: 10em !important;
+                height: 10em;
+
+				}
+			}
+		}
+	}
+	
+	
+}

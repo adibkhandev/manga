@@ -1,0 +1,143 @@
+
+.taka{
+	display: flex;
+	align-items: center;
+
+}
+.minier{
+
+		@include Font(clamp(0.8rem, 1vw, 1rem),100);
+	h1{
+		margin-left: 3.8px;
+		font-size: inherit;
+		font-weight: inherit;
+	     }
+	  img{
+	  	font-size: inherit;
+		height: 0.8em !important;
+		width: 0.8em !important;
+	}
+}
+.mini{
+		@include Font(1em,100);
+	h1{
+		margin-left: 4px;
+		font-size: inherit;
+		font-weight: inherit;
+	     }
+	  img{
+	  	font-size: inherit;
+		height: 1em;
+	}
+}
+.one{
+		@include Font(1.2em,100);
+		h1{
+		margin-left: 6px;
+		font-size: inherit;
+		font-weight: inherit;
+	     }
+	  img{
+	  	font-size: inherit;
+		height: 1.4em;
+	}
+}
+.two{
+		@include Font(1.85em,300);
+		h1{
+		margin-left: 6px;
+		font-size: inherit;
+		font-weight: inherit;
+	     }
+	  img{
+	  	font-size: inherit;
+		height: 2.25em;
+	}
+}
+.three{
+		@include Font(2em,300);
+		h1{
+		margin-left: 6px;
+		font-size: inherit;
+		font-weight: inherit;
+	     }
+	  img{
+	  	font-size: inherit;
+		height: 2.5em;
+	}
+}
+.seperate{
+	display: flex;
+}
+
+.stars{
+	display: flex;
+	.star{
+		margin: 0 3px;
+		height:1.8em;
+		fill: blue;
+	}
+}
+.filter-widget{
+
+.filter-inputs{
+	margin-bottom: 0.4em;
+	height: 1.2rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	input{
+		border-radius: 3px;
+		color: #636363;
+		@include Font(0.8em,100);
+		padding: 0.1rem 0.5rem;
+		width: 3.5em;
+		background-color: #ececec;
+	}
+}
+.desc{
+	
+	border-radius: 3px;
+	background-color: #B1B2B5;
+   width: 100%;
+   height: 1.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   h1{
+   	color: white;
+   	text-align: center;
+   	@include Font(0.8rem,100);
+   }
+}
+
+}
+.white-count{
+	@include Font(1.1em,100);
+        color: black;
+        background-color: rgba(255, 255, 255, 0.29);
+
+  	  	padding: 0.2em 0.55em;
+  	  	border-radius: 40px;
+
+}
+.dark-count{
+	@include Font(1.1em,100);
+        color: black;
+        background-color: #b1b2b5;
+  	  	padding: 0.2em 0.55em;
+  	  	border-radius: 40px;
+}
+.heart{
+	transition: fill 0.4s ease-in-out;
+	fill: transparent;
+    stroke: #202020;
+    stroke-width:1em ;
+    stroke-linecap: round;
+    width: 1rem;
+}
+.liked{
+	fill:pink;
+	transition: fill 0.4s ease-in-out;
+	stroke: hotpink;
+}

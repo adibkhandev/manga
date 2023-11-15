@@ -1,0 +1,97 @@
+@font-face {
+    font-family:Komigo;
+    src: url(../Komigo.ttf);
+}
+@mixin Font($fontsize,$fontweight){
+	font-family: 'Manrope', sans-serif;
+	font-weight: $fontweight;
+	font-size: $fontsize;
+}
+@mixin Font($fontsize,$fontweight){
+	font-family: 'Manrope', sans-serif;
+	font-weight: $fontweight;
+	font-size: $fontsize;
+}
+@mixin FancyFont($fontsize,$fontweight){
+	font-family: 'Bangers', cursive;
+	font-weight: $fontweight;
+	font-size: $fontsize;
+}
+@mixin FancierFont($fontsize,$fontweight){
+	font-family: Komigo;
+	font-weight: $fontweight;
+	font-size: $fontsize;
+}
+@mixin CowboyFont($fontsize,$fontweight){
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: $fontweight;
+	font-size: $fontsize;
+}
+@mixin CursiveFont($fontsize,$fontweight){
+	font-family: 'Pacifico', cursive;
+	font-weight: $fontweight;
+	font-size: $fontsize;
+}
+$border-purple: #280042;
+$fill-purple: #19001e;
+@import './bill','./loader','./cart','./component','./categories','./populars','./landing','./logreg','./navigation','./post','./runningout','./searched','./reviewer','./nav','./liked','./counter','./animations','./order','./load','./account','./geomap';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+
+
+}
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+}
+a{
+	 text-decoration: none;
+	color: inherit;
+	&:hover{
+		outline: none;
+	}
+}
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+   
+}
+// button{
+// 	@include Font(0.75rem,100);
+// }
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    
+}
+button , img , h1{
+	cursor: pointer;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+
+
+
+

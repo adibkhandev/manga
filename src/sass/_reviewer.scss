@@ -1,0 +1,201 @@
+.reviewer-page{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-color:  #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.product-details{
+
+		min-width: 20em;
+
+		display: flex;
+		width: 60%;
+		height: 25vh;
+		position: relative;
+		.review-image{
+			height: 100%;
+			border-radius: 3px;
+			margin-right: 0.4em;
+		}
+		.details{
+			margin-left: 2%;
+			.title{
+				
+				@include FancyFont(clamp(1.8rem,3vw,2.8rem),100);
+				color: #3d3d3d;
+				margin-bottom: 0.6%;
+			}
+			.story{
+				@include Font(clamp(0.7rem,1.4vw,1.1rem),100);
+
+				max-height: 9em;
+				max-width: 38em;
+				margin-bottom: 2%;
+				// overflow: hidden;
+
+			}
+			.stars{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+	.input{
+		width: 60%;
+		min-width: 20em;
+		// overflow: hidden;
+        margin-top: 1.6%;
+        position: relative;
+        img{
+				height: 1.1em;
+				position:absolute ;
+				top: 9.2%;
+				right: 1.2%;
+		}
+		input{
+			background-color: #f3f3f3;
+
+			width: 98%;
+			padding: 1.25em 0em ;
+			padding-left: 1em;
+			padding-bottom: 8em;
+			box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;  
+			border-radius: 3px;
+			&::placeholder{
+				color: grey;
+				
+				@include Font(clamp(0.75rem,1.5vw,0.9rem),100);
+			}
+
+
+		}
+	}
+	.buttons{
+		margin-top: 1.4em;
+		width: 60%;
+		min-width: 20rem;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.btn-1{
+	button{
+	padding: 1.8em 4em;
+	border-radius: 4px;
+	background-color: #19001E ;
+	color: white;
+	@include Font(clamp(0.48rem,1.25vw,0.8rem),100);
+
+
+   }
+}
+.image-poster{
+	position: relative;
+	width: auto;
+	height: 4.4em;
+    display: flex;
+	justify-content: flex-start;
+	
+	input{
+		display: none;
+	}
+	&:hover{
+		cursor: pointer !important;
+		}
+	.gone{
+		display: none;
+	}
+	.clicker{
+		width: 5.4em;
+		height: 5.4em;
+		font-size: clamp(0.4em,1.2vw,1em);
+		border-style: solid;
+		border-color: #19001E ;
+		border-radius: 4px;
+		border-width: 0.2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.desc{
+			margin-left: -2px;
+			display: flex;
+			position: relative;
+		h1{
+			@include CursiveFont(clamp(0.4rem,1vw,0.8rem),400);
+		}
+		.plus{
+			display: flex;
+            margin-left: 0.5em;
+            position: absolute;
+            top:-5px;
+            right: -2px;
+            bottom: 10px;
+			div{
+				height: 10px;
+				width: 2px;
+				background-color: #19001E ;
+			}
+			.hor{
+				margin-left: -2px;
+				transform: rotate(90deg);
+			}
+		}	
+		}
+	}
+		
+  		
+
+}
+.image-poster{
+	
+}
+.input-image{
+	margin-right: 1em;
+	height: 5.4em;
+	width: 5.4em;
+	overflow: hidden;
+	font-size: clamp(0.4em,1.2vw,1em);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-color: #19001E ;
+		border-radius: 4px;
+		border-width: 0.2rem;
+	img{
+		width: 5.4rem;
+	}
+}
+@media(width < 800px){
+  .reviewer-page{
+.clicker{
+	.desc{
+		h1{
+		display: none !important;
+	}
+	}
+}
+  .stars{
+  	margin-top: 20px !important;
+  	
+  	img{
+  		margin-right: 0.02rem !important;
+  		width: 1rem;
+  	}
+  }
+  	
+  .taka{
+  	margin-top: 1em;
+  	h1{
+  	font-size: 1rem !important;
+   }
+   img{
+    font-size: 0.8rem ;
+   }
+  }
+  }
+}

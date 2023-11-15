@@ -1,0 +1,39 @@
+.counter-cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(0.7rem,1vw,1rem);
+	width: 6em;
+    height: 5em;
+    @media (width<800px) {
+    	font-size: 0.6rem !important;
+    }
+	.left-arrow{
+		font-size: inherit;
+		width: 1em;
+		min-width: 1em;
+		transform: rotate(180deg);
+	}
+	.right-arrow{
+		font-size: inherit;
+		width: 1em;
+		min-width: 1em;
+		transform: rotate(0deg);
+	}
+	.header-cont{
+		font-size: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #8f8f8f;
+        height: 1.8em;
+        width: 1.8em;
+		border-radius: 900px;
+		h1{
+			font-family: "Manrope", sans-serif !important;
+            font-weight: 300 !important;
+            font-size: 0.9em !important;
+			color: #dfdfdf;
+		}
+	}
+}

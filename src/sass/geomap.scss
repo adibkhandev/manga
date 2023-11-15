@@ -1,0 +1,48 @@
+
+.map-cont{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	
+	.nav-cont{
+		position: absolute;
+		z-index: 3;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		bottom: 3vw;
+	}
+	.nav{
+	display: flex;
+	width: 95%;	
+    
+    
+    input{
+    	flex: 1;
+    }
+     .search-btn , .target , .location-search{
+        border-radius: 4px;
+     }
+    .search-btn , .target{
+    	background-color: white;
+    	width: 5em;
+    	height: 5em;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	img{
+          width: 26%;
+    	}
+    }
+    .search-btn{
+    	margin-right:1vw ;
+    }
+    .target{
+    	margin-left: 1vw;
+    }
+    .location-search{
+    	padding-left:2.4em ;
+    	
+    }
+	}
+}

@@ -1,0 +1,209 @@
+@keyframes animation-1 {
+	0%{
+
+		transform: rotate(0deg);
+
+	}
+	30%{
+		transform: rotate(3deg);
+		
+	}
+	100%{
+		transform: translate(65em);
+	}
+}
+
+@keyframes animation-2 {
+	0%{
+		transform: rotate(3deg);
+		transform: translate(65em);
+	}
+	50%{
+		transform: translate(0vw);
+		
+		
+	}
+	100%{
+         transform: rotate(0deg);
+	}
+}
+@keyframes animation-3 {
+	0%{
+
+		transform: rotate(0deg);
+
+	}
+	30%{
+		transform: rotate(-3deg);
+		
+	}
+	100%{
+		transform: translate(-65em);
+	}
+}
+
+@keyframes animation-4 {
+	0%{
+		transform: rotate(-3deg);
+		transform: translate(-65em);
+	}
+	50%{
+	transform: translate(0);
+		
+		
+	}
+	100%{
+         transform: rotate(0deg);
+	}
+}
+
+
+
+
+@keyframes appeared {
+	0%{
+          opacity: 0;
+         
+	}
+	100%{
+            opacity: 1;
+            
+	}
+}
+@keyframes side-e-bhaya {
+	0%{
+		opacity: 1;
+		display: flex;
+	}
+	90%{
+		opacity: 0;
+		width: 0;
+		margin: 0;
+		
+	}
+	100%{
+		opacity: 0;
+		width: 0;
+		margin: 0;
+		
+	}
+}
+@keyframes goner {
+	0%{
+		opacity: 1;
+		
+	}
+	100%{
+		opacity: 0;
+		
+	}
+}
+
+@keyframes side-e-bhaya-2 {
+	0%{
+		
+	}
+		100%{
+		margin-left: 15vw;
+		
+	}
+}
+@keyframes hover-on {
+	from{
+		top:50%;
+	}
+	to{
+		top:0;
+	}
+}
+@keyframes hover-off {
+	from{
+		top:0;
+	}
+	to{
+		top:100%;
+	}
+}
+@keyframes side-anime-start {
+    0%{
+    	right: 0;
+    }
+    70%{
+    	
+    	opacity: 0.9;
+    }
+    100%{
+        right: -12em;
+        opacity: 1;
+    }
+
+}
+@keyframes nav {
+	0%{
+		position: absolute;
+	}
+
+	100%{
+		position: absolute;
+		
+		top: 0;
+	}
+}
+@keyframes nav2 {
+	0%{
+        opacity: 1;
+	}
+    
+	100%{
+       opacity: 0;
+	}
+}
+@keyframes loader {
+	0%{
+		width: 0.1em;
+		height: 0.1em;
+		border-radius: 100000px;
+		opacity: 0.1;
+		
+		
+	}
+	40%{
+
+		opacity: 0.8;
+	}
+	95%{
+		width: 100vh;
+		height: 100vh;
+		
+	}
+	100%{
+		width: 120vw;
+		height: 120vh;
+		border-radius: 10px;
+
+		opacity: 1;
+	}
+	
+}
+@keyframes spiner {
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(4320deg);
+	}
+}
+@keyframes logreg-notify {
+    0%{
+    	top: -100vh;
+    }
+    30%{
+    	top: 0vh;
+    }
+    80%{
+    	top: 0vh;
+    }
+    100%{
+    	top: -100vh;
+    }
+}
