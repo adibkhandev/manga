@@ -99,7 +99,7 @@ let Home =(props)=>{
              
             >
            <div className="image">
-             <img src="/rhinoapp/images/gojo.webp" alt=""/>
+             <img src="/manga/images/gojo.webp" alt=""/>
            </div>
            {/*<div className="image-mob">
              <img src="rhinoapp/images/gojo.webp" alt=""/>
@@ -155,7 +155,7 @@ let Popup =()=>{
 
   return(
       
-       <img src="rhinoapp/images/mikasa.png" alt="" className="pop-img"/>
+       <img src="manga/images/mikasa.png" alt="" className="pop-img"/>
       
   )
 }

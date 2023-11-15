@@ -124,7 +124,7 @@ let Item = ({item}) =>{
 						      <img src={`${image_url}${item.image}`} alt="" className="card-image"/>
 						      <h1 className="card-title">{item.name}</h1>
 						      <div className="price">
-						       <img src="rhinoapp/images/taka.png" alt="" className="price-icon"/>
+						       <img src="manga/images/taka.png" alt="" className="price-icon"/>
 						       <h1 className="card-price">{item.price}</h1>
 						      </div>
 						

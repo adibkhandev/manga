@@ -27,7 +27,7 @@ export const Nav = (props) => {
 			
 			<div className="rhino-logo">
 			     <Link to="/"></Link>
-				<img   src={location.pathname=='/'?`/rhinoapp/images/logo-${props.colour}.png`:`images/logo-${props.colour}.png`} alt="" className={"rhino"}>
+				<img   src={location.pathname=='/'?`/manga/images/logo-${props.colour}.png`:`images/logo-${props.colour}.png`} alt="" className={"rhino"}>
                         
 				</img>
 
@@ -91,7 +91,7 @@ export let SearchEngine = ({setSearch,searchon,ase}) =>{
             	<div className="submit">
             		<Link to="/searched">
             		<button onClick={handleSubmit}>
-            	     <img src={location.pathname=='/'?"/rhinoapp/images/search-ash.png":"images/search-ash.png"} alt=""/>
+            	     <img src={location.pathname=='/'?"/manga/images/search-ash.png":"images/search-ash.png"} alt=""/>
             		</button>
             		</Link>
             	</div>
@@ -141,7 +141,7 @@ let IconNav =(props)=>{
             	 <Link to={props.user?"/account":"/login"} >
                	    <img 
                	     className={props.pfp?`pfp ${props.color} `:""} 
-               	     src={props.pfp?`${url}${props.pfp}`:location.pathname=='/'?`/rhinoapp/images/account-${props.color}.png`:`images/account-${props.color}.png`} 
+               	     src={props.pfp?`${url}${props.pfp}`:location.pathname=='/'?`/manga/images/account-${props.color}.png`:`images/account-${props.color}.png`} 
                	     alt=""
                	    />
                  </Link>
@@ -157,7 +157,7 @@ let IconNav =(props)=>{
                  	{notifications.liked}
                  </div>
                  ):''}
-            	  <img src={location.pathname=='/'?`/rhinoapp/images/love-${props.color}.png`:`images/love-${props.color}.png`} alt=""/>
+            	  <img src={location.pathname=='/'?`/manga/images/love-${props.color}.png`:`images/love-${props.color}.png`} alt=""/>
                 </Link>
             	</div>
 
@@ -172,7 +172,7 @@ let IconNav =(props)=>{
                  </div>
                  ):''}
 
-            	 <img src={location.pathname=='/'?`/rhinoapp/images/shopping-bag-${props.color}.png`:`images/shopping-bag-${props.color}.png`} alt=""/>
+            	 <img src={location.pathname=='/'?`/manga/images/shopping-bag-${props.color}.png`:`images/shopping-bag-${props.color}.png`} alt=""/>
             	 </Link>
             	</div>
             </div>            
