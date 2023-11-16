@@ -194,7 +194,7 @@ const Bill = () => {
 		</div>
 
 		<div className={billed?"ext-bill":"poof"}>
-			<img src="images/order-cover.jpg" alt=""/>
+			<img src="manga/images/order-cover.jpg" alt=""/>
 			<div className="parts-ext">
 				<h1>Your order has been placed .</h1>
 			<div className="buttonS">
