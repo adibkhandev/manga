@@ -133,14 +133,14 @@ const RunningOut = () => {
                         setDeduct(-1)
                       }
                     } >
-                  <img id="left" src="images/arrow-icon.png" alt=""/>
+                  <img id="left" src="/manga/images/arrow-icon.png" alt=""/>
                 </button>
                 <button onClick={()=>{
                         setAnimate(1)
                         setDeduct(1)
                       }
                     } >
-                  <img id="right" src="images/arrow-icon.png" alt=""/>
+                  <img id="right" src="/manga/images/arrow-icon.png" alt=""/>
                 </button>
 
               </div>

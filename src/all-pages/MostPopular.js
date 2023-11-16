@@ -87,7 +87,7 @@ const MostPopular = () => {
 
 let Item = ({item}) =>{
 	// let image_url = 'http://127.0.0.1:8000'
-	let image_url = process.env.REACT_APP_DATABASE_URL
+	let image_url = process.env.REACT_APP_BACKEND_URL
 	let [visible,setVisible] = useState(false)
 	let cardRef = useRef(null)
 	let callback = entries =>{

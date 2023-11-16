@@ -24,13 +24,9 @@ import {AuthProvider,Context} from './all-pages/Context'
 import {BrowserRouter , Routes,Route,Link} from "react-router-dom"
 const App = () => {
   let [loaded,setLoaded]=useState(false)
-  
-
-//
   useEffect(() => {
     console.log(process.env.REACT_APP_BACKEND_URL,'nackend')
     let loading = setTimeout(()=>{
-         
          setLoaded(true)
          console.log('done')
     },4200);
@@ -39,43 +35,30 @@ const App = () => {
         clearTimeout(loading)  
     };
   }, [])
-
-  
-
-//
-
   return (
      <>
-     {!loaded?(
-         <Loader></Loader>
-      ):(
+     <div style={!loaded?{overflow:'hidden'}:{overflow:'initial'}} className="frame">
+        {!loaded?<Loader/>:''}
+        <BrowserRouter basename={process.env.PUBLIC_URL} >
+          <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Landing />} ></Route>
+            <Route path="/categories" element={<Categories/>} ></Route>
+            <Route path="/map" element={<GeoMap/>} ></Route>
+            <Route path="/cart" element={<Cart/>} ></Route>
+            <Route path="/post" element={<Post/>} ></Route>
+            <Route path="/searched" element={<Searched />} ></Route>
+            <Route path="/bill" element={<Bill/>} ></Route>
+            <Route path="/reviewer" element={<Reviewer/>} ></Route>
+            <Route path="/liked" element={<Liked/>} ></Route>
+            <Route path="/login" element={<LogReg/>} ></Route>
+            <Route path="/order" element={<Order/>} ></Route>
+            <Route path="/account" element={<Account/>} ></Route>
+          </Routes>  
+          </AuthProvider>
+        </BrowserRouter>     
 
-          <BrowserRouter basename={process.env.PUBLIC_URL} >
-           
-           <AuthProvider>
-            <Routes>
-               
-              <Route path="/" element={<Landing />} ></Route>
-              <Route path="/categories" element={<Categories/>} ></Route>
-              <Route path="/map" element={<GeoMap/>} ></Route>
-              <Route path="/cart" element={<Cart/>} ></Route>
-              <Route path="/post" element={<Post/>} ></Route>
-              <Route path="/searched" element={<Searched />} ></Route>
-              <Route path="/bill" element={<Bill/>} ></Route>
-              <Route path="/reviewer" element={<Reviewer/>} ></Route>
-              <Route path="/liked" element={<Liked/>} ></Route>
-              <Route path="/login" element={<LogReg/>} ></Route>
-              <Route path="/order" element={<Order/>} ></Route>
-              <Route path="/account" element={<Account/>} ></Route>
-             
-            </Routes>
-             
-           </AuthProvider>
-          </BrowserRouter>
-
-      )
-    }
-     
+     </div>
      </>
   )
 }

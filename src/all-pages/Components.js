@@ -39,7 +39,7 @@ export let Taka =(props)=>{
    // console.log(props.white)
    return(
            <div className={"taka"+" " +props.num}>
-             <img src={props.white?"images/taka-white.png":"images/taka.png"} alt="" className="tkimg"/>
+             <img src={props.white?"/manga/images/taka-white.png":"/manga/images/taka.png"} alt="" className="tkimg"/>
              <h1 className="tknum" >{props.taka}</h1>
            </div>
    )
