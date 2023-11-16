@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/manga/static/css/main.127e0eb3.css",
-    "main.js": "/manga/static/js/main.d45f1f4e.js",
+    "main.js": "/manga/static/js/main.49af2a67.js",
     "static/js/483.f5046fcb.chunk.js": "/manga/static/js/483.f5046fcb.chunk.js",
     "static/js/787.042cb57d.chunk.js": "/manga/static/js/787.042cb57d.chunk.js",
     "static/media/bg-jjk-3.jpg": "/manga/static/media/bg-jjk-3.1826dd4235e18db7189e.jpg",
@@ -9,12 +9,12 @@
     "static/media/Komigo.ttf": "/manga/static/media/Komigo.6f3c63d06f8f676f98fe.ttf",
     "index.html": "/manga/index.html",
     "main.127e0eb3.css.map": "/manga/static/css/main.127e0eb3.css.map",
-    "main.d45f1f4e.js.map": "/manga/static/js/main.d45f1f4e.js.map",
+    "main.49af2a67.js.map": "/manga/static/js/main.49af2a67.js.map",
     "483.f5046fcb.chunk.js.map": "/manga/static/js/483.f5046fcb.chunk.js.map",
     "787.042cb57d.chunk.js.map": "/manga/static/js/787.042cb57d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.127e0eb3.css",
-    "static/js/main.d45f1f4e.js"
+    "static/js/main.49af2a67.js"
   ]
 }
